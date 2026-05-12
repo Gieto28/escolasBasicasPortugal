@@ -89,16 +89,6 @@ export default function App() {
         {winner && !isDrawing && <WinnerCard school={winner} />}
       </section>
 
-      <footer className="foot">
-        <p>
-          Para gerar um único ficheiro HTML com dados incluídos:{" "}
-          <code className="mono">npm install</code>, depois{" "}
-          <code className="mono">npm run export-html</code> (cria{" "}
-          <code className="mono">loteria-escolas-basicas.html</code>
-          na raiz do projeto) ou <code className="mono">npm run build</code> e use{" "}
-          <code className="mono">dist/index.html</code>.
-        </p>
-      </footer>
     </div>
   );
 }

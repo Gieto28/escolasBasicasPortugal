@@ -3,11 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://gieto28.github.io/escolasBasicasPortugal",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "export-html": "npm run build && cp dist/index.html loteria-escolas-basicas.html"
+    "export-html": "npm run build && cp dist/index.html loteria-escolas-basicas.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -19,6 +22,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "~5.7.2",
     "vite": "^6.0.1",
-    "vite-plugin-singlefile": "^2.0.2"
+    "vite-plugin-singlefile": "^2.0.2",
+    "gh-pages": "^6.3.0"
   }
 }
